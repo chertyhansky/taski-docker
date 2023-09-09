@@ -6,11 +6,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 DEBUG = os.getenv('DJANGO_DEBUG') == 'True'
-ALLOWED_HOSTS = [addr for addr in str(os.getenv('DJANGO_ALLOWED_HOSTS')).split(', ')]
+# ALLOWED_HOSTS = [addr for addr in str(os.getenv('DJANGO_ALLOWED_HOSTS')).split(', ')]
 
 # SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^'
 # DEBUG = True
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 
 # Application definition
