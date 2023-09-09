@@ -46,6 +46,9 @@ jobs:
       # Запускаем flake8
     - name: Test with flake8 and django tests
       env:
+        DJANGO_SECRET_KEY: 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^'
+        DJANGO_DEBUG: 'False'
+        DJANGO_ALLOWED_HOSTS: '127.0.0.1, localhost'
         POSTGRES_USER: django_user
         POSTGRES_PASSWORD: django_password
         POSTGRES_DB: django_db
